@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_stp_1wt_ht">
+    <title>Uploading Text and URLs into DToC</title>
+    <shortdesc>If you do not have an XML document document, DToC allows you to upload text or URLs.
+        Some features will be unavailable using this method (like the index). </shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Paste your text or an URL into the text box located on the front page of DToC.
+                        <image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3A17ab3198-9fcf-4061-b772-dc380065d96c/datastream/OBJ/view"
+                        id="image_znb_bc5_ht" align="center" scale="85"/></cmd>
+            </step>
+            <step>
+                <cmd>Click on the “Reveal” button located right below the text box. This opens the
+                    document in DToC. </cmd>
+            </step>
+            <step>
+                <cmd>Begin to work with your text.</cmd>
+                <info importance="high">Using this method, you will not have an index or any tags
+                    (even if you paste in an XML document, see screenshot below). You will be able
+                    to see information in the stats column (term frequency). Additionally, you will
+                    not have a table of contents or lines in the document model and you cannot
+                    search the document.<image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3Aa16ad38e-869c-4383-8123-848e0fde03dc/datastream/OBJ/view"
+                        id="image_xs4_fc5_ht" align="center" scale="85"/></info>
+                <info>This image displays the simple XML template uploaded using the copy and paste
+                    text box (with tags) instead of the XPath method. </info>
+            </step>
+        </steps>
+    </taskbody>
+    <related-links/>
+</task>

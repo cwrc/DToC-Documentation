@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vks_qnq_ht">
+    <title>Creating Index Subheadings</title>
+    <shortdesc>You can organize a group of indexes together under a subheading. You can add another
+        list tag within the established list (anywhere in the list is fine).</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Nest a ‘list’ tag within an ‘item’ tag. </cmd>
+                <info>An example index:<image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3Acf2f34c0-3eca-405d-b089-4f90e3a07902/datastream/OBJ/view"
+                        id="image_uqs_l4q_ht" align="center"/></info>
+            </step>
+            <step>
+                <cmd>Within the 'list' tag add an 'item' tag. So the breadcrumb trail would be
+                    item>lists>item(s). Each 'item' tag wraps around each index entry (it’s content
+                    is the index term). </cmd>
+            </step>
+            <step>
+                <cmd>Step 3: Add a &lt;ref> tag to the items in the list. <image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3A0a4ac238-ce00-44e2-be20-5a16873f9471/datastream/OBJ/view"
+                        id="image_jvw_v4q_ht" align="center"/></cmd>
+                <info>The 'ref' tag has a target attribute, whose value is a space seperated list of
+                    paragraph XML IDs. The 'ref' tag references the paragraphs in the body text.
+                </info>
+            </step>
+            <step>
+                <cmd>Begin to add your index terms between the item/ref tags. </cmd>
+            </step>
+            <step>
+                <cmd>Once you have added all the index terms for your documents begin to note down
+                    what paragraph(s) that each index term is located. </cmd>
+            </step>
+            <step>
+                <cmd>Add the XML ids (from the paragraph(s) or other tags) in the target attribute
+                    of the &lt;ref> tag. If there are multiple XML ids related to the index term,
+                    separate these with a space. <image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3A8fbe56d7-7625-43f5-a6dd-5e76080987ee/datastream/OBJ/view"
+                        id="image_yyr_gpq_ht" align="center"/></cmd>
+            </step>
+        </steps>
+    </taskbody>
+    <related-links/>
+</task>

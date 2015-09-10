@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ubh_c45_ht">
+    <title>Searching the full text</title>
+    <shortdesc>You can use the DToC search function if there is a specific word you are looking for. </shortdesc>
+    <taskbody>
+        <context>
+            <p>The search feature will only search within the chapter that you have selected.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Type in the word(s) that you are searching for. </cmd>
+                <info>The search box is autocomplete-enabled. <image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3A3781fd6d-9e49-4c20-8dd6-6b9b05ac2776/datastream/OBJ/view"
+                        id="image_rmy_t45_ht" align="center"/></info>
+                <info importance="urgent">Search for exact words or phrases.  For example, if a typo
+                    or extra space is included, your search may not work.</info>
+            </step>
+            <step>
+                <cmd>DToC displays the location of the word you are looking for under the title of
+                    the chapter they appear in and in the document model. Search hits are
+                    represented in purple. </cmd>
+                <info>You can scroll through the results in the "Table of Contents" using your
+                    mouse. <image placement="break"
+                        href="http://beta.cwrc.ca/islandora/object/cwrc%3A4a29aba5-51e8-408b-93eb-bb83e3c5340f/datastream/OBJ/view"
+                        id="image_anf_dp5_ht" align="center" scale="85"/></info>
+            </step>
+            <step>
+                <cmd>To restart your search choose the “Clear” button located at the top of the
+                    document model. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+    <related-links/>
+</task>

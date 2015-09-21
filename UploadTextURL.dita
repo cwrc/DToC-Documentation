@@ -19,10 +19,10 @@
             <step>
                 <cmd>Begin to work with your text.</cmd>
                 <info importance="high">Using this method, you will not have an index or any tags
-                    (even if you paste in an XML document, see screenshot below). You will be able
-                    to see information in the stats column (term frequency). Additionally, you will
-                    not have a table of contents or lines in the document model and you cannot
-                    search the document.<image placement="break"
+                    (even if you paste in an XML document, see screenshot below). Additionally, you
+                    will not have a table of contents or lines in the document model and you cannot
+                    search the document. However, you will be able to see information in the stats
+                    column (term frequency).<image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3Aa16ad38e-869c-4383-8123-848e0fde03dc/datastream/OBJ/view"
                         id="image_xs4_fc5_ht" align="center" scale="85"/></info>
                 <info>This image displays the simple XML template uploaded using the copy and paste

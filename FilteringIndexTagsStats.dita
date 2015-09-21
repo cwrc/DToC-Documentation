@@ -11,10 +11,10 @@
                     for terms or tags found in a specific chapter by selecting an option from the
                     “Filter by Chapter” drop down menu.</cmd>
                 <info>The terms are narrowed down automatically as you type. The filter narrows down
-                    terms or tag by if they have the specific combination of letters within the word
-                    (not just if the word starts with the letters you are typing). <note
-                        importance="high">The Stats column search filter is located at the bottom of
-                        the column.<image placement="break"
+                    terms or tags based on whether they have the specific combination of letters
+                    within the word (not just if the word starts with the letters you are typing).
+                        <note importance="high">The Stats column search filter is located at the
+                        bottom of the column.<image placement="break"
                             href="http://beta.cwrc.ca/islandora/object/cwrc%3Ac7383560-ce3d-432c-acd3-d8a86d4223d3/datastream/OBJ/view"
                             id="image_obp_qn5_ht" align="center"/><image placement="break"
                             href="http://beta.cwrc.ca/islandora/object/cwrc%3A406d05d6-62df-4634-99fc-8ed131351f2d/datastream/OBJ/view"

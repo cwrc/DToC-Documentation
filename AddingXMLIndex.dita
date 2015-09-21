@@ -41,8 +41,9 @@
                     cross reference the index or add sub terms within an index theme. </info>
             </step>
             <step>
-                <cmd>Once you have added all the index terms for your documents begin to note down
-                    what paragraph(s) that each index term is located. </cmd>
+                <cmd>Now note all the paragraph XML ids that the terms are found in. It may be
+                    helpful to write this down before you begin creating your index, or you can add
+                    the XML ids to your index as you go.</cmd>
             </step>
             <step>
                 <cmd>Add the XML ids (from the paragraph(s) or other tags) in the target attribute
@@ -60,7 +61,7 @@
             </step>
         </steps>
         <example>
-            <p>The index term “Sherlock” is located in four of the paragraphs of the document. </p>
+            <p>The index term “Sherlock” is located in four in the paragraphs of the document. </p>
             <p>Record/Note the paragraphs that contain the index term. In this case, the index term
                 is located in the third, fourth, fifth, and sixth paragraphs. These paragraphs are
                 in a small document and have been assigned their own XML ids by the author/creator. </p>

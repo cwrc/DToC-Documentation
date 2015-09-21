@@ -5,7 +5,9 @@
     <shortdesc>You can use the DToC search function if there is a specific word you are looking for. </shortdesc>
     <taskbody>
         <context>
-            <p>The search feature will only search within the chapter that you have selected.</p>
+            <p>If you have selected a chapter from the Table of Contents then your search will only
+                be conducted within that chapter. If you would like to conduct a full text search
+                make sure that none of the chapters/sections are selected. </p>
         </context>
         <steps>
             <step>

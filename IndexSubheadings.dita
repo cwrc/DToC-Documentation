@@ -21,16 +21,16 @@
                 <cmd>Step 3: Add a &lt;ref> tag to the items in the list. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A0a4ac238-ce00-44e2-be20-5a16873f9471/datastream/OBJ/view"
                         id="image_jvw_v4q_ht" align="center"/></cmd>
-                <info>The 'ref' tag has a target attribute, whose value is a space seperated list of
-                    paragraph XML IDs. The 'ref' tag references the paragraphs in the body text.
-                </info>
+                <info>The 'ref' tag has a target attribute, its value is a space seperated list of
+                    paragraph XML IDs. The 'ref' tag references the paragraphs in the body text. </info>
             </step>
             <step>
                 <cmd>Begin to add your index terms between the item/ref tags. </cmd>
             </step>
             <step>
-                <cmd>Once you have added all the index terms for your documents begin to note down
-                    what paragraph(s) that each index term is located. </cmd>
+                <cmd>Now note all the paragraphs that your terms are found in. It may be helpful to
+                    write this down before you begin creating your index, or you can add the XML ids
+                    to your index as you go. </cmd>
             </step>
             <step>
                 <cmd>Add the XML ids (from the paragraph(s) or other tags) in the target attribute

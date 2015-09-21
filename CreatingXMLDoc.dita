@@ -77,7 +77,7 @@
             </step>
             <step importance="optional">
                 <cmd>You can now continue to mark up your text with XML tags (e.g. event, place,
-                    organization, etc.). These tags will appear in the tag column on the left side
+                    organization, etc.). These tags will appear in the Tags column on the left side
                     of the DToC tool. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A2730f29d-dba5-47e0-a9e4-93e575007e45/datastream/OBJ/view"
                         id="image_mqg_m3n_ht" align="center"/></cmd>

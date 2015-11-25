@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_fbg_255_ht">
-    <title>Viewing Stats by Chapters and Collections</title>
-    <shortdesc>You can view words that are found in a specific chapter or section in your document,
-        or view all the words of the document. </shortdesc>
+    <title>Viewing stats by chapters and collections </title>
     <taskbody>
         <steps>
             <step>
@@ -12,7 +10,7 @@
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A11ca1bd3-877c-472a-b213-de81a1af2295/datastream/OBJ/view"
                         id="image_hxh_t55_ht" align="center"/></cmd>
             </step>
-            <step>
+            <step importance="optional">
                 <cmd>If you have selected to view words found in chapters or sections, you must then
                     select the chapter you want from the table of contents. Click once on the
                     chapter you want to work with.</cmd>
@@ -25,10 +23,18 @@
                 <cmd>If you have selected to view the words by collection (which refers to the
                     entire document with all chapters), continue to explore the listed words. </cmd>
             </step>
-            <step importance="optional">
-                <cmd>Explore the list of words found in your document.</cmd>
-            </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="OverviewDToC.dita"/>
+        <link href="TableOfContents.dita"/>
+        <link href="LeftColumnDToC.dita"/>
+        <link href="SettingsRef.dita"/>
+        <link href="FilteringIndexTagsStats.dita"/>
+        <link href="SearchFullText.dita"/>
+        <link href="FilteringChapter.dita"/>
+        <link href="SortingWordFreq.dita"/>
+        <link href="ViewWordFrequ.dita"/>
+        <link href="FavWords.dita"/>
+    </related-links>
 </task>

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_xlf_knn_ht">
-    <title>Adding an Index to your XML Document</title>
-    <shortdesc>Once you have created your XML document and have added XML ids to your paragraph and
-        div tags, you can add an index of terms at the bottom of your page.</shortdesc>
+    <title>Adding an index to your XML document</title>
+    <shortdesc>DToC is best configured for documents that have indexes. </shortdesc>
     <taskbody>
         <steps id="steps_smr_p3p_ht">
             <step>
@@ -54,8 +53,8 @@
             </step>
             <step>
                 <cmd>Save your document.</cmd>
-                <info>Once you have uploaded your document to the Dynamic table of contexts it will
-                    look like this:<image placement="break"
+                <info>Once you have uploaded your document to DToC it will look like this:<image
+                        placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A68b073ff-025b-440b-ab6e-ac177a8068d4/datastream/OBJ/view"
                         id="image_z43_yjp_ht" align="center"/></info>
             </step>
@@ -68,10 +67,21 @@
             <p>Those paragraphs are assigned “P3”, “P4”, “P5”, and “P6”. </p>
             <p>Within the ref tag add the “target” attribute. Then add the paragraph XML ids within
                 the target quotation marks. If there are multiple paragraphs that contain this
-                keyword separate them with a space. <image placement="break"
-                    href="http://beta.cwrc.ca/islandora/object/cwrc%3Ac562b021-1da8-4480-b01b-66f9e59512ad/datastream/OBJ/view"
-                    id="image_fw2_15p_ht" align="center"/></p>
+                keyword separate them with a space. </p>
+            <image placement="break"
+                href="http://beta.cwrc.ca/islandora/object/cwrc%3Ac562b021-1da8-4480-b01b-66f9e59512ad/datastream/OBJ/view"
+                id="image_fw2_15p_ht" align="center"/>
         </example>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="CreatingXMLDoc.dita#task_nlg_4dn_ht"/>
+        <link href="AddingXMLidsSmallDoc.dita#task_lgt_m5p_ht"/>
+        <link href="AddingXMLidsOxygen.dita#task_vqx_qyp_ht"/>
+        <link href="IndexSubheadings.dita#task_vks_qnq_ht"/>
+        <link href="CrossReferenceIndex.dita#task_upv_ypt_ht"/>
+        <link href="UploadDocDToC.dita#task_grd_sqt_ht"/>
+        <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+        <link href="OverviewDToC.dita#reference_bfm_blm_lt"/>
+        <link href="XMLTemplatesRef.dita#reference_vx1_1pk_nt"/>
+    </related-links>
 </task>

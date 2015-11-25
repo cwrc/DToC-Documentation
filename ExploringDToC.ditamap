@@ -13,4 +13,7 @@
  <topicref href="ViewStatsChpCollection.dita"/>
  <topicref href="FavWords.dita"/>
  <topicref href="ExportingDoc.dita"/>
+ <topicref href="LoginAnnotationAuthentication.dita"/>
+ <topicref href="CommentingText.dita"/>
+ <topicref href="CuratingTags.dita"/>
 </map>

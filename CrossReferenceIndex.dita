@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_upv_ypt_ht">
-    <title>Creating Cross Referencing Index terms</title>
-    <shortdesc>In DToC you can cross reference your index. This allows you to draw connections
-        between terms found in different sections or chapters of your document. </shortdesc>
+    <title>Creating cross referencing index terms</title>
+    <shortdesc>Cross referencing allows you to draw connections between terms found in different
+        sections or chapters of your document. </shortdesc>
     <taskbody>
         <steps>
             <step>
-                <cmd>Make sure you have XML ids attached to your ‘item’ tags in the index (refer
-                    back to Section 1).</cmd>
+                <cmd>Make sure you have XML ids attached to your ‘item’ tags in the index.</cmd>
             </step>
             <step>
                 <cmd>Below the ‘item’ ‘ref’ tags add a ‘list’ tag.</cmd>
@@ -36,5 +35,15 @@
             </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="CreatingXMLDoc.dita#task_nlg_4dn_ht"/>
+        <link href="AddingXMLidsSmallDoc.dita#task_lgt_m5p_ht"/>
+        <link href="AddingXMLidsOxygen.dita#task_vqx_qyp_ht"/>
+        <link href="AddingXMLIndex.dita#task_xlf_knn_ht"/>
+        <link href="IndexSubheadings.dita#task_vks_qnq_ht"/>
+        <link href="UploadDocDToC.dita#task_grd_sqt_ht"/>
+        <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+        <link href="OverviewDToC.dita#reference_bfm_blm_lt"/>
+        <link href="XMLTemplatesRef.dita#reference_vx1_1pk_nt"/>
+    </related-links>
 </task>

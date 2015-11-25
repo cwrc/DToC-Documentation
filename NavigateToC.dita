@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_v5n_jd5_ht">
-    <title>Navigating Text in the Table of Contents</title>
-    <shortdesc>Users view text in DToC by looking in the right hand column of the tool. You can
-        access the text in three different ways. </shortdesc>
+    <title>Navigating text in the table of contents</title>
+    <shortdesc>The Table of Contents displays terms selected (from the left column) and lets users
+        move through the text by clicking on them. This allows for in-depth exploration of terms
+        without scrolling through large chunks of text. </shortdesc>
     <taskbody>
         <steps>
             <step>
-                <cmd>Open a document in DToC. </cmd>
-            </step>
-            <step>
                 <cmd>Click on a section/chapter/article in the Table of Contents. </cmd>
-                <info>This will move the black arrow in the document model display area to the text
-                    that you have selected.<image placement="break"
+                <info>This will move the black arrow of the document model to the text that you have
+                        selected.<image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A4ce224d6-61fb-4112-af7a-ead858e2fe2c/datastream/OBJ/view"
                         id="image_zgl_r25_ht" align="center"/></info>
             </step>
@@ -23,5 +21,23 @@
             </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="OverviewDToC.dita"/>
+        <link href="TableOfContents.dita"/>
+        <link href="LeftColumnDToC.dita"/>
+        <link href="UploadDocDToC.dita"/>
+        <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+        <link href="NavDocModel.dita"/>
+        <link href="NavTextArea.dita"/>
+        <link href="FilteringIndexTagsStats.dita"/>
+        <link href="SearchFullText.dita"/>
+        <link href="FilteringChapter.dita"/>
+        <link href="SortingWordFreq.dita"/>
+        <link href="ViewWordFrequ.dita"/>
+        <link href="ViewStatsChpCollection.dita"/>
+        <link href="FavWords.dita"/>       
+        <link href="LoginAnnotationAuthentication.dita"/>
+        <link href="CommentingText.dita"/>
+        <link href="CuratingTags.dita"/>
+    </related-links>
 </task>

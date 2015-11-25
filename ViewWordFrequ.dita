@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_xpj_lt5_ht">
-    <title>Viewing Word Frequencies</title>
-    <shortdesc>By clicking on a word in the word frequency list, you can view where they are located
-        within the chapters/sections, or the entire collection. </shortdesc>
+    <title>Viewing word frequencies</title>
     <taskbody>
         <steps>
             <step>
@@ -23,5 +21,15 @@
             </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="OverviewDToC.dita"/>
+        <link href="TableOfContents.dita"/>
+        <link href="LeftColumnDToC.dita"/>
+        <link href="FilteringIndexTagsStats.dita"/>
+        <link href="SearchFullText.dita"/>
+        <link href="FilteringChapter.dita"/>
+        <link href="SortingWordFreq.dita"/>
+        <link href="ViewStatsChpCollection.dita"/>
+        <link href="FavWords.dita"/>
+    </related-links>
 </task>

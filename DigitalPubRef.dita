@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_usy_zqk_nt">
-  <title>Digital Publication Options</title>
-  <shortdesc>DToC allows users to digitally “publish” their DToC documents by providing them with an
-    URL or by opening a new page with the XML structure displayed with the document. </shortdesc>
+  <title>Digital publication options</title>
+  <shortdesc>DToC provides different features to share and save your document for future
+    use.</shortdesc>
   <refbody>
     <section>
       <title>Export Document</title>
-      <p>If you would like to share your document with others or bookmark the URL without uploading
-        the document again then you can choose to “Export” your document. DToC provides you with an
-        URL to preserve a link of your curated document. The “Export” option is found under the
-        settings menu option (upper right corner).</p>
-      <p>The Export option is used to create and preserve a link to the curated version of a
-        document/edition. </p>
+      <p>DToC provides you with an URL to preserve a link of your curated document. The “Export”
+        option is found under the settings menu option (upper right corner).</p>
       <p>Once you have opened the settings menu choose the “Export” button. This opens another popup
         that contains the URL for your document. You can either click on the linked “URL” option,
         which opens a new browser window or copy and paste the URL. <image placement="break"
@@ -21,15 +17,20 @@
     </section>
     <section>
       <title>XML Digital View</title>
-      <p>If you would like to see your XML document structure (for XML documents only) you can
-        choose the XML button, located beside the settings button in the upper right corner. This
-        will open a new browser window with a display of your document XML structure. <image
-          placement="break"
+      <p>For XML documents only, you can click on the "XML" button located in the upper right
+        corner. This will open a new browser window with a display of your document XML structure.
+          <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A3486b574-5d16-4ac4-9596-2e7b1bea5492/datastream/OBJ/view"
           id="image_gcc_fhr_nt" align="center" scale="80"/></p>
       <p>You can bookmark this page. If you try to print this version of your document, the XML
         structure will not be printed, just the text. </p>
     </section>
   </refbody>
-  <related-links/>
+  <related-links>
+    <link href="OverviewDToC.dita"/>
+    <link href="TableOfContents.dita"/>
+    <link href="LeftColumnDToC.dita"/>
+    <link href="SettingsRef.dita"/>
+    <link href="ExportingDoc.dita"/>
+  </related-links>
 </reference>

@@ -2,18 +2,17 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_vmk_cqk_nt">
   <title>Settings</title>
-  <shortdesc>The “Settings” menu allows users to change how you view the chapter titles, reader
-    information, and the DToC mode. You can also choose to export your document from the “Settings”
-    menu.</shortdesc>
   <refbody>
     <section>
       <p>“Settings” is located in the upper right corner of DToC and is represented by a small gear
           icon.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A7f8ef19f-1c73-4a7b-ae75-0022944f13e9/datastream/OBJ/view"
           id="image_g4r_4qk_nt" align="center"/></p>
-      <p>When you click on the gear icon a popup appears. <image placement="break"
+      <p>
+        <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A2e873ad1-b53c-4420-9a7a-6cbfd362abfe/datastream/OBJ/view"
-          id="image_afm_wqk_nt" align="center"/></p>
+          id="image_afm_wqk_nt" align="center"/>
+      </p>
       <p>Setting Options:<ul id="ul_gt5_hqk_nt">
           <li>Chapter Titles: Allow you to either view the “Full Titles” (default option) or as
             “Condensed Titles with Pop-up” in the Table of Contents.</li>
@@ -32,5 +31,15 @@
         </ul></p>
     </section>
   </refbody>
-  <related-links/>
+  <related-links>
+    <link href="OverviewDToC.dita"/>
+    <link href="TableOfContents.dita"/>
+    <link href="LeftColumnDToC.dita"/>
+    <link href="XMLTemplatesRef.dita"/>
+    <link href="DigitalPubRef.dita"/>
+    <link href="UploadDocDToC.dita"/>
+    <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+    <link href="ExportingDoc.dita"/>
+    <link href="CuratingTags.dita"/>
+  </related-links>
 </reference>

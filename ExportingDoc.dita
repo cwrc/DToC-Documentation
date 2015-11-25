@@ -2,8 +2,6 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_tdb_hp5_ht">
     <title>Exporting your document</title>
-    <shortdesc>The Export option is used to create and preserve a link to the curated version of a
-        document/edition. </shortdesc>
     <taskbody>
         <steps>
             <step>
@@ -13,8 +11,7 @@
                         id="image_n53_tp5_ht" align="center"/></cmd>
             </step>
             <step>
-                <cmd>A popup appears, select the “Export” button and the bottom of the popup. <image
-                        placement="break"
+                <cmd>Select the “Export” button at the bottom of the popup. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A2e873ad1-b53c-4420-9a7a-6cbfd362abfe/datastream/OBJ/view"
                         id="image_aww_yp5_ht" align="center"/></cmd>
             </step>
@@ -26,9 +23,13 @@
                         id="image_afv_bq5_ht" align="center"/></cmd>
             </step>
             <step>
-                <cmd>Click on “Okay”, you will now have two versions of your document open. </cmd>
+                <cmd>Click on “OK”, you will now have two versions of your document open. </cmd>
             </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="OverviewDToC.dita"/>
+        <link href="SettingsRef.dita"/>
+        <link href="DigitalPubRef.dita"/>
+    </related-links>
 </task>

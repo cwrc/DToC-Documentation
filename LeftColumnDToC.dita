@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_z1m_fmw_mt">
-  <title>Left Column of Dynamic Table of Context</title>
-  <shortdesc>The left column of DToC contains the options that allow you an indepth look at your
-    document. The “Index, Tab, Stats or Annotation” column allow users to search and browse the
-    document by key terms, tags, and word frequency information. </shortdesc>
+  <title>Left column of Dynamic Table of Context</title>
+  <shortdesc>This column allow users to search and browse the document by key terms, tags, and word
+    frequency information. </shortdesc>
   <refbody>
+    <section>
+      <title>General Information</title>
+      <p>The four tabs operate similarly in DToC. </p>
+      <p>When you click on an index term/tag/stat/annotation, DToC displays their location in
+        different ways. The “Table of Contents” expands to show you where it is in each
+        chapter/section. The document model highlights each line that contains the term. And the
+        text area highlights the paragraphs that contain the selected term. </p>
+      <p>You can highlight index, terms, and words at the same time to see patterns in your text,
+        each are represented by a different colour. <ul id="ul_pwq_4qn_c5">
+          <li>Index terms are represented by the colour orange.</li>
+          <li>Tags are represented in blue. </li>
+          <li>Word frequency terms are represented in purple. </li>
+        </ul></p>
+      <p> To reset any search or filter option you can select the “Clear” button located at the top
+        of the document model or unselect the chapter/section filter. </p>
+      <p>You can search or filter within the tabs. If you want to see a search term in a specific
+        section/chapter, or see the index terms that are only found in a specific section/chapter,
+        you can choose to “Filter by Chapter.”</p>
+      <p>Clicking on the “Filter by Chapter” brings up a drop down menu with the available sections
+        to choose from. Once you have selected the chapter/section you want to focus on the index
+        terms will automatically narrowed down. </p>
+      <p>If you’ve selected to filter by chapter in another section of the left column (e.g. Tag or
+        Stats), this choice will not be remembered when you move to a different tab. </p>
+      <image placement="break"
+        href="http://beta.cwrc.ca/islandora/object/cwrc%3A0a145304-a5b4-4ce6-b8e4-4b68d81d5c85/datastream/OBJ/view"
+        id="image_egh_yx5_c5" align="center"/>
+    </section>
     <section>
       <title>Index Tab</title>
       <p>If you have terms indexed in your XML document they appear in the left column, organized
@@ -15,54 +41,25 @@
       <p>The index can contain subsections and indexed cross references to provide a robust keyword
         catalogue. The numbers located beside each of the terms refers to how many time that term
         shows up in the complete text.</p>
-      <p>When you click on an index term, DToC displays where the terms are located in the document.
-        The “Table of Contents” expands to show you where it is in each chapter/section. The
-        document model highlights each line that contains the index term. The Text Area displays the
-        highlighted text of the paragraphs that contain the index term. Index terms are represented
-        by the colour orange.</p>
-      <p>You can highlight index, terms, and words at the same time to see patterns in your
-          text.<image placement="break"
+      <p>
+        <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A1baf9c81-9052-4365-8d34-91df31af1a70/datastream/OBJ/view"
-          id="image_yvp_xdx_mt" align="center" scale="80"/></p>
-      <p>You can search or filter the index if you are looking for a specific word. Additionally, if
-        you want to see a search term in a specific section/chapter, or see the index terms that are
-        only found in a specific section/chapter, you can choose to “Filter by Chapter.”</p>
-      <p>Clicking on the “Filter by Chapter” brings up a drop down menu with the available sections
-        to choose from. Once you have selected the chapter/section you want to focus on the index
-        terms will automatically be narrowed down to just those that are found in the chosen
-        chapter/section. </p>
-      <p>If you’ve selected to filter by chapter in another section of the left column (e.g. Tag or
-        Stats), this choice will not be remembered when you move to a different tab. <image
-          placement="break"
-          href="http://beta.cwrc.ca/islandora/object/cwrc%3A0a145304-a5b4-4ce6-b8e4-4b68d81d5c85/datastream/OBJ/view"
-          id="image_c1x_g2x_mt" align="center"/></p>
-      <p>To reset a search or filter option you can select the “Clear” button located at the top of
-        the abstract text column (middle right) or unselect any chosen chapter/section filter. </p>
+          id="image_yvp_xdx_mt" align="center" scale="80"/>
+      </p>
     </section>
-    <section><title>Tags Tab</title><p>The “Tags” tab shows you the structural, descriptive, and
-        semantic tags that exist in your uploaded XML document. </p><p>The “Tags” tab is the second
-        tab in the left column. The list displays any of the tags found in your XML document. If you
-        use an URL or paste in text rather than uploading your own XML document, the “Tags” tab will
-        be empty. </p><p>When you click on a tag, DToC displays where the tags are located in the
-        document. The “Table of Contents” expands to show you where it is in each chapter/section.
-        The document model highlights each line that contains the index term. And the far right
-        column that displays the text highlights the paragraphs that contain the tag. Tags are
-        represented in blue. </p><p>You can highlight index, terms, and words at the same time to
-        see patterns in your text. The numbers next to the tags display how many times the tag is
-        found in the document.<image placement="break"
+    <section><title>Tags Tab</title><p>The “Tags” tab displays any of the tags found in your XML
+        document. If you use an URL or paste in text rather than uploading your own XML document,
+        the “Tags” tab will be empty. </p><p>You can highlight index, terms, and words at the same
+        time to see patterns in your text. The numbers next to the tags display how many times the
+        tag is found in the document. <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A9376647b-9c25-43b5-a2c7-2c7370e44238/datastream/OBJ/view"
           id="image_cps_42x_mt" align="center" scale="80"/></p><p>You can view specific tags in the
         other columns by selecting one from the list or searching for it in the filter search box at
         the top of the column. If you want to see only the tags that are found in a specific
         chapter/section then you can choose the “Filter by Chapter” option at the top right of the
-        column. </p><p>If you’ve selected to filter by chapter in another section of the left column
-        (e.g. Index or Stats), this choice will not be remembered when you move to a different.
-          <image placement="break"
-          href="http://beta.cwrc.ca/islandora/object/cwrc%3A3980f368-e437-4005-ad09-c47c0bdb73ac/datastream/OBJ/view"
-          id="image_a4r_t2x_mt" align="center"/></p><p>To reset a search or filter option you can
-        select the “Clear” button located at the top of the abstract text column (middle right) or
-        unselect any chosen chapter/section filter. </p><p>You can curate and add tags to your
-        document. To do this go to settings and select the “Curate” option in the dropdown menu.
+        column. </p><image placement="break"
+        href="http://beta.cwrc.ca/islandora/object/cwrc%3A3980f368-e437-4005-ad09-c47c0bdb73ac/datastream/OBJ/view"
+        id="image_a4r_t2x_mt" align="center"/><p>You can curate and add tags to your document.
         </p><p>The “Curator” mode is found in the “Settings” menu under the mode drop down menu.
         This will organize the tags under two headings, “Tag/Path” and the “Label.”<image
           placement="break"
@@ -90,14 +87,7 @@
           id="image_b53_jmk_nt" align="center"/></p><p>This will add new tags to the tag list and
         will be viewable in the “Tag” column.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3Afa6b73d8-ae40-4751-aef8-1229d54a0ab9/datastream/OBJ/view"
-          id="image_tpj_nmk_nt" align="center"/></p><p>To delete tags select the “Remove Selected”
-        option. This will delete the tag from the both lists.<image placement="break"
-          href="http://beta.cwrc.ca/islandora/object/cwrc%3Aec3e459a-139b-4e9d-9b06-68505fec29f8/datastream/OBJ/view"
-          id="image_lys_pmk_nt" align="center"/></p><p>If you would like to view where the tags are
-        located in the “Table of Contents” or “Text Area” select the “Show Selected” option.<image
-          placement="break"
-          href="http://beta.cwrc.ca/islandora/object/cwrc%3Adeec4e7e-a2e8-4808-95fa-5f944c556dfb/datastream/OBJ/view"
-          id="image_mwj_5mk_nt" align="center" scale="80"/></p></section>
+          id="image_tpj_nmk_nt" align="center"/></p></section>
     <section>
       <title>Stats Tab</title>
       <p>The “Stats” tab displays the word frequency of your document. You can organize how you view
@@ -105,25 +95,25 @@
         your “favorites.”</p>
       <p>The Stats information is available whenever you use DToC (it is not dependent on uploading
         your own XML document). </p>
-      <p>When you click on a word, DToC displays where the terms are located in the document. The
-        “Table of Contents” expands to show you where it is in each chapter/section. The document
-        model highlights each line that contains the index term. And the text area highlights the
-        paragraphs that contain the word. Word frequency terms are represented in purple. </p>
-      <p>You can highlight index, terms, and words at the same time to see patterns in your
-        text.</p>
-      <p>An alternate option to view the word frequencies in the reader column is found under
-        “Settings.” Check the “Freq. Info in Reader” option and when you hover your cursor over a
-        word in the reader column the frequency of said word appears in a popup. <image
-          placement="break"
+      <p>You can view word frequencies in the reader column. Check the “Freq. Info in Reader” option
+        in the "Settings" menu and when you hover your cursor over a word in the reader column the
+        frequency of said word appears in a popup. <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3Adf00c28a-1518-46c4-8f9a-40052d2fc92b/datastream/OBJ/view"
           id="image_r3w_bfx_mt" align="center" scale="80"/></p>
       <p>The preloaded organization options include “Type,” “Count,” “Relation,” and “Trend.” You
         can add or remove these options by choosing the black arrow menu that appears when you hover
-        over the headings. This is not to be confused by a smaller grey arrow that is right beside
-        the selected heading name (this option allows you to change the order of presentation --
-        alphabetical descending or ascending). <image placement="break"
+        over the headings. The options are: “Sort Ascending,” “Sort Descending,” "Columns," “Group
+        By This Field,” and “Show in Groups.” </p>
+      <p>The black arrow is not to be confused by a smaller grey arrow that is right beside the
+        selected heading name (this option allows you to change the order of presentation --
+        alphabetical descending or ascending-- bypassing the need to select those options from the
+        dropdown menu). You can see this gray arrow in the image below beside the "Type" column
+        heading.</p>
+      <p>
+        <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3Af58e95d7-647b-4151-9279-347021be6cee/datastream/OBJ/view"
-          id="image_whr_1nk_nt" align="center"/></p>
+          id="image_whr_1nk_nt" align="center"/>
+      </p>
       <p>To change the headings available select the “Columns” option in the drop down menu to
         produce a checklist that you can customize. <image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3Ac72e5fd2-ac34-4a16-8cc5-736f2bdc0893/datastream/OBJ/view"
@@ -138,8 +128,8 @@
       <p>You can filter terms by chapter or the entire document. At the top left of the column
         choose either “Chapter Stats” (the default selection) or “Collection Stats.”</p>
       <p>If you don’t want to scroll through the list of terms, there is a search option at the
-        bottom of the “Stats” column. The search feature is autocomplete enabled. You need to select
-        one of these options to search the “Stats” list.<image placement="break"
+        bottom of the “Stats” column. The search feature is auto complete enabled. You need to
+        select one of these options to search the “Stats” list.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A86d7381b-bf96-4369-bad0-6e98b3258f91/datastream/OBJ/view"
           id="image_ymf_znk_nt" align="center"/></p>
       <p>The Stats tab also allows you to personalize a word frequency list under “favorites.”
@@ -155,7 +145,6 @@
         “favorites” list.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A484e84c9-3c5b-41e5-a69e-f3c24ecc5708/datastream/OBJ/view"
           id="image_jl1_g4k_nt" align="center"/></p>
-      <p>For more information on the “Stats” tab see “Frequency Information” linked below.</p>
     </section>
     <section>
       <title>Annotation Tab</title>
@@ -189,8 +178,35 @@
       <p>You can view your annotations in the annotation tab. If you would like to “Filter” your
         annotations, type your search term in the “Filter” box. The search box is
         autocomplete-enabled. </p>
-      <p>More information about how this is displayed - to come.</p>
     </section>
   </refbody>
-  <related-links/>
+  <related-links>
+    <link href="OverviewDToC.dita"/>
+    <link href="TableOfContents.dita"/>
+    <link href="XMLTemplatesRef.dita"/>
+    <link href="SettingsRef.dita"/>
+    <link href="DigitalPubRef.dita"/>
+    <link href="CreatingXMLDoc.dita"/>
+    <link href="AddingXMLidsSmallDoc.dita#task_lgt_m5p_ht"/>
+    <link href="AddingXMLidsOxygen.dita#task_vqx_qyp_ht"/>
+    <link href="AddingXMLIndex.dita#task_xlf_knn_ht"/>
+    <link href="IndexSubheadings.dita#task_vks_qnq_ht"/>
+    <link href="CrossReferenceIndex.dita#task_upv_ypt_ht"/>
+    <link href="UploadDocDToC.dita#task_grd_sqt_ht"/>
+    <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+    <link href="NavigateToC.dita"/>
+    <link href="NavDocModel.dita"/>
+    <link href="NavTextArea.dita"/>
+    <link href="FilteringIndexTagsStats.dita"/>
+    <link href="SearchFullText.dita"/>
+    <link href="FilteringChapter.dita"/>
+    <link href="SortingWordFreq.dita"/>
+    <link href="ViewWordFrequ.dita"/>
+    <link href="ViewStatsChpCollection.dita"/>
+    <link href="FavWords.dita"/>
+    <link href="ExportingDoc.dita"/>
+    <link href="CommentingText.dita"/>
+    <link href="LoginAnnotationAuthentication.dita"/>
+    <link href="CuratingTags.dita"/>
+  </related-links>
 </reference>

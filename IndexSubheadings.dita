@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_vks_qnq_ht">
-    <title>Creating Index Subheadings</title>
-    <shortdesc>You can organize a group of indexes together under a subheading. You can add another
-        list tag within the established list (anywhere in the list is fine).</shortdesc>
+    <title>Creating index subheadings</title>
     <taskbody>
         <steps>
             <step>
@@ -21,16 +19,11 @@
                 <cmd>Step 3: Add a &lt;ref> tag to the items in the list. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A0a4ac238-ce00-44e2-be20-5a16873f9471/datastream/OBJ/view"
                         id="image_jvw_v4q_ht" align="center"/></cmd>
-                <info>The 'ref' tag has a target attribute, its value is a space seperated list of
+                <info>The 'ref' tag has a target attribute, its value is a space separated list of
                     paragraph XML IDs. The 'ref' tag references the paragraphs in the body text. </info>
             </step>
             <step>
                 <cmd>Begin to add your index terms between the item/ref tags. </cmd>
-            </step>
-            <step>
-                <cmd>Now note all the paragraphs that your terms are found in. It may be helpful to
-                    write this down before you begin creating your index, or you can add the XML ids
-                    to your index as you go. </cmd>
             </step>
             <step>
                 <cmd>Add the XML ids (from the paragraph(s) or other tags) in the target attribute
@@ -41,5 +34,15 @@
             </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="CreatingXMLDoc.dita#task_nlg_4dn_ht"/>
+        <link href="AddingXMLidsSmallDoc.dita#task_lgt_m5p_ht"/>
+        <link href="AddingXMLidsOxygen.dita#task_vqx_qyp_ht"/>
+        <link href="AddingXMLIndex.dita#task_xlf_knn_ht"/>
+        <link href="CrossReferenceIndex.dita#task_upv_ypt_ht"/>
+        <link href="UploadDocDToC.dita#task_grd_sqt_ht"/>
+        <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+        <link href="OverviewDToC.dita#reference_bfm_blm_lt"/>
+        <link href="XMLTemplatesRef.dita#reference_vx1_1pk_nt"/>
+    </related-links>
 </task>

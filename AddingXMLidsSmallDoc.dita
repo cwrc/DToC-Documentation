@@ -3,8 +3,7 @@
 <task id="task_lgt_m5p_ht">
     <title>Adding XML ids to your document manually</title>
     <shortdesc>DToC uses XML ids as index locators; every index item is associated with one or more
-        paragraph (as opposed to pages in print indexes). You will need to add XML ids to your 'p'
-        tags in order to create a link between the index items and their reference ids.</shortdesc>
+        paragraph (as opposed to pages in print indexes). </shortdesc>
     <taskbody>
         <context>
             <p>If your document is small you can add your own XML ids. If you have a larger
@@ -15,7 +14,7 @@
             <step>
                 <cmd>Add a XML id within your 'p' tags in your document. To do this insert your
                     cursor between the ‘p’ text and the right angle bracket and add an xml:id=''
-                    attribute. It should look like this:</cmd>
+                    attribute. </cmd>
                 <info>It is optional to assign XML ids located in the TEI Header. </info>
             </step>
             <step>
@@ -29,7 +28,7 @@
                     index any citations in your document you can add XML ids to the 'note' tags.
                     Alternatively, if you would like to cross reference your index you can also add
                     XML ids to the 'item' tags. For more information please refer to the document
-                    "Creating Cross Referencing Index terms" Linked to below.</info>
+                    "Creating Cross Referencing Index terms" linked to below.</info>
             </step>
         </steps>
         <example>
@@ -41,8 +40,16 @@
                     id="image_n25_zvp_ht" align="center"/></p>
             <p>You can use a combination of letters and numbers, but you cannot have spaces located
                 within the XML id attribute. You can use underscores. Each paragraph, even if they
-                are in different chapters needs a distinct Id. </p>
+                are in different chapters needs a distinct id. </p>
         </example>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="CreatingXMLDoc.dita#task_nlg_4dn_ht"/>
+        <link href="AddingXMLidsOxygen.dita#task_vqx_qyp_ht"/>
+        <link href="IndexSubheadings.dita#task_vks_qnq_ht"/>
+        <link href="CrossReferenceIndex.dita#task_upv_ypt_ht"/>
+        <link href="UploadDocDToC.dita#task_grd_sqt_ht"/>
+        <link href="UploadTextURL.dita#task_stp_1wt_ht"/>
+        <link href="XMLTemplatesRef.dita#reference_vx1_1pk_nt"/> 
+    </related-links>
 </task>

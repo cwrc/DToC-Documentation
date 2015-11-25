@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_zhj_xv5_ht">
-    <title>Favoriting Words</title>
-    <shortdesc>You can “Favorite” words found in your document to create a list of words of
-        particular interest. </shortdesc>
+    <title>Favoriting words</title>
+    <shortdesc>You can add as many terms as you would like to your “Favorites” list, either all at
+        once or a few at a time. </shortdesc>
     <taskbody>
         <steps>
             <step>
@@ -20,13 +20,13 @@
             </step>
             <step>
                 <cmd>Click on the red heart icon that has the green plus sign. This will add the
-                    selected terms to a “Favorites” list.</cmd>
-                <info>You can add as many terms as you would like to your “Favorites” list, either
-                    all at once or a few at a time (see below). <image placement="break"
+                    selected terms to a “Favorites” list.
+                    <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A6e2e78f6-ed8c-4d24-b89a-b2a3ef3b01e0/datastream/OBJ/view"
-                        id="image_asm_qw5_ht" align="center"/><image placement="break"
+                        id="image_asm_qw5_ht" align="center"/>
+                    <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3Abf0fb135-5150-4b48-ad73-0c2e3d88e9ae/datastream/OBJ/view"
-                        id="image_ect_ww5_ht" align="center"/></info>
+                        id="image_ect_ww5_ht" align="center"/></cmd>
             </step>
             <step>
                 <cmd>To switch back and forth from the original list to your “favorites,” click on
@@ -36,13 +36,22 @@
                         id="image_nh5_tw5_ht" align="center"/></cmd>
             </step>
             <step>
-                <cmd>To remove a word for your “Favorites” list, select it and click on the heart
-                    icon that has a red minus icon. This icon is not located in the favorites drop
-                    down menu, but beside it. <image placement="break"
+                <cmd>To remove a word from your “Favorites” list, select it and click on the heart
+                    that has a red minus icon. This icon is not located in the favorites drop down
+                    menu, but beside it. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3Abc67df93-e605-42a6-ad05-d2f059f72d73/datastream/OBJ/view"
                         id="image_vyl_zw5_ht" align="center"/></cmd>
             </step>
         </steps>
     </taskbody>
-    <related-links/>
+    <related-links>
+        <link href="OverviewDToC.dita"/>
+        <link href="LeftColumnDToC.dita"/>
+        <link href="FilteringIndexTagsStats.dita"/>
+        <link href="FilteringChapter.dita"/>
+        <link href="SortingWordFreq.dita"/>
+        <link href="ViewWordFrequ.dita"/>
+        <link href="ViewStatsChpCollection.dita"/>
+        <link href="CuratingTags.dita"/>
+    </related-links>
 </task>

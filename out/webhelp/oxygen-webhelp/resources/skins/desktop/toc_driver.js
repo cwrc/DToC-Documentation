@@ -4,6 +4,9 @@
 $(document).ready(function () {
     debug("document ready ...");
 
+    // Add @title to page title element (used to rewrite page title to contain topic title)
+    $("title").attr("title", $("title").html());
+
     /**
      * @description Split page in leftPane and rightPane
      */
@@ -35,7 +38,7 @@ $(document).ready(function () {
         $(this).removeAttr('target');
     });
     if (!notLocalChrome) {
-        var warningMsg = 'Please note that due to security settings in Google Chrome you will be redirected to webhelp frameset version!';
+        var warningMsg = 'Chrome limits JavaScript functionality when a page is loaded from the local disk. This prevents the normal help viewer from loading.\nYou will be redirected to the frameset version of the help.';
         if (confirm(warningMsg)) {
             // using Chrome to read local files
             redirect('index_frames.html');
@@ -54,9 +57,20 @@ $(document).ready(function () {
         };
     }
 
-    resizeContent();
 //    toggleLeft();
 });
+
+/**
+ * @description Print iframe content
+ * @param id Iframe id
+ * @return {boolean} Always return false
+ */
+function printFrame(id) {
+    var frm = document.getElementById(id).contentWindow;
+    frm.focus();// focus on contentWindow is needed on some ie versions
+    frm.print();
+    return false;
+}
 
 /**
  * @description If CGI contains the q param will redirect the user to the topic specified in the param value
@@ -105,8 +119,10 @@ function loadIframe(dynamicURL) {
     var tempLink = new String(dynamicURL);
     if (tempLink.indexOf('?') !== -1) {
         tempLink = tempLink.substr(0, tempLink.indexOf('?'));
+        var tempLinks = tempLink.split("/");
+        tempLink = tempLinks[tempLinks.length-1];
     }
-    if (tempLink.indexOf('.htm') === -1 && tempLink.indexOf('.xhtm') === -1) {
+    if (tempLink.indexOf('.') != -1 && tempLink.indexOf('.htm') === -1 && tempLink.indexOf('.xhtm') === -1) {
         debug('open in new window: ' + tempLink);
         window.open(tempLink, '_blank');
         return;
@@ -129,6 +145,34 @@ function loadIframe(dynamicURL) {
     iframeHeaderCell.appendChild(iframeHeader);
 
     $('#frm').load(function () {
+        setTimeout(function(){
+            tocWidth = parseInt($('#tocMenu').css('width'));
+            navLinksWidth = parseInt($('#navigationLinks').css('width'));
+            breadCrumbWidth = parseInt($('#breadcrumbLinks').css('width'));
+            var navLinks = withFrames?$(top.frames[ "contentwin"].document).find(".navparent a,.navprev a,.navnext a"):$(".navparent a,.navprev a,.navnext a");
+            navLinks.hide();
+            navLinksWidthMin = parseInt($('#navigationLinks').css('width'));
+            resizeContent();
+
+            // Rewrite page title to contain topic title (EXM-30681)
+            $("title").html($("title").attr("title") + " - " + $("#frm").contents().find("title").html());
+
+            // EXM-31118 Rewrite anchors relative to current loaded frame to contain frame link
+            var links = $('#frm').contents().find('a');
+            var currentLocation = $('#frm').attr('src');
+            if(currentLocation.indexOf('#')>0) {
+                currentLocation = currentLocation.substring(0, currentLocation.indexOf('#'));
+            }
+            while (currentLocation.indexOf("/")!=-1) {
+                currentLocation = currentLocation.substring(currentLocation.indexOf("/")+1);
+            }
+            $.each(links, function(){
+                var link = $(this).attr('href');
+                if(link.indexOf('#')==0) {
+                    $(this).attr('href', currentLocation+link);
+                }
+            });
+        }, 10);
         debug('#frm.load');
         if (notLocalChrome) {
             debug('#frm.load 1');
@@ -219,28 +263,9 @@ function loadIframe(dynamicURL) {
             nextTOCSelection = parseInt($.cookie('wh_pn')) + 1;
             $.cookie('wh_pn', nextTOCSelection);
         });
-        
-        $('#productToolbar .navheader_linktext').each(function () {
-            if ($(this).text().length > 30) {
-                $(this).text($(this).text().substr(0, 30) + "...");
-            }
-        });
-
-        var width_pt = $('#productToolbar').outerWidth(true);
-        var width_nl = $('#navigationLinks').outerWidth(true);
-        var width_bl = width_pt - width_nl;
-        var width_bla = $('#breadcrumbLinks a').outerWidth(true);
-        $('#productToolbar .navheader_parent_path').each(function () {
-            if (width_bla > width_bl) {
-                $(this).text($(this).text().replace(/\./gi,'').substr(0, 37) + "...");
-            } else {
-                $(this).text($(this).text().replace(/\./gi,''));
-            }
-        });
 
         highlightSearchTerm(searchedWords);
-        resizeContent();
-        
+
         // Click on navigation links without text
 	    $('.navparent,.navprev,.navnext').unbind('click').bind('click', function(){
 	        $(this).find('a').trigger('click');
@@ -289,7 +314,8 @@ function markSelectItem(hrl, startWithMatch) {
                 $('#contentBlock li span').removeClass('menuItemSelected');
                 var item = $(loc).first();
                 item.parent('li span').addClass('menuItemSelected');
-                $.cookie("wh_pn", $(loc).first().parents('li').index('li'));
+                var findIndexOf = $(loc).first().closest('li');
+				$.cookie("wh_pn", $('#contentBlock li').index(findIndexOf));
             }
             toReturn = true;
         } else {
@@ -310,7 +336,8 @@ function markSelectItem(hrl, startWithMatch) {
                     $('#contentBlock li span').removeClass('menuItemSelected');
                     var item = $(loc).first();
                     item.parent('li span').addClass('menuItemSelected');
-                    $.cookie("wh_pn", $(loc).first().parents('li').index('li'));
+                    var findIndexOf = $(loc).first().closest('li');
+					$.cookie("wh_pn", $('#contentBlock li').index(findIndexOf));
                 }
                 toReturn = true;
             }

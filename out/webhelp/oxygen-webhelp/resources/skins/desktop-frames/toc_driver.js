@@ -37,7 +37,8 @@ function markSelectItem(url) {
         $(newloc).each(function () {
             if (Math.abs($(this).parents('li').index('li') - currentTOCSelection) < diff) {
                 diff = Math.abs($(this).parents('li').index('li') - currentTOCSelection);
-                closest = $(this).parents('li').index('li');
+                var findIndexFor = $(this).closest('li');
+				closest = $('#contentBlock li').index(findIndexFor);
             }
         });
         var loc = '#contentBlock li:eq(' + currentTOCSelection + ') a[href="' + toFind + '"]';

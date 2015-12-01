@@ -38,6 +38,8 @@ Warranty: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRES
 
   5. Normalize search results HREFs and add '#' for no-frames webhelp
 
+  6. Keep custom footer in TOC after searching some text
+
 */
 
 // Return true if "word1" starts with "word2"  
@@ -128,6 +130,9 @@ var txt_results_for = "Results for:";
  */
 function SearchToc(ditaSearch_Form) {
   debug('SearchToc(..)');
+  //START - EXM-30790
+  var footer = $("#searchResults .footer");
+  //END - EXM-30790
   // Check browser compatibitily
   if (navigator.userAgent.indexOf("Konquerer") > -1) {
     alert(getLocalization(txt_browser_not_supported));
@@ -198,6 +203,9 @@ function SearchToc(ditaSearch_Form) {
       }
   });
   //END - EXM-29420
+  //START - EXM-30790
+  $("#searchResults").append(footer);
+  //END - EXM-30790
 }
 
 var stemQueryMap = new Array();  // A hashtable which maps stems to query words
@@ -379,16 +387,6 @@ function realSearch(expressionInput) {
             linkString += "\n<div class=\"shortdesclink\">" + tempShortdesc + "</div>";
           }
                     
-          // Add rating values for scoring at the list of matches
-          linkString += "<div id=\"rightDiv\">";
-          linkString += "<div id=\"star\">";
-          linkString += "<div id=\"star0\" class=\"star\">";
-          linkString += "<div id=\"starCur0\" class=\"curr\" style=\"width: " + starWidth + "px;\">&nbsp;</div>";
-          linkString += "</div>";
-                  
-          linkString += "<br style=\"clear: both;\">";
-          linkString += "</div>";
-          linkString += "</div>";
           linkString += "</li>";
           linkTab.push(linkString);
           no++;

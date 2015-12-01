@@ -16,6 +16,11 @@ html,body {
     font-size: 10pt;
 }
 
+#oldFrames:hover, #printlink a:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 .tab {
     display: inline-block;
 }
@@ -96,7 +101,13 @@ html,body {
     padding-top:10px;
     vertical-align:top;
 }
-
+#bck_toc #contentBlock{
+    padding-bottom: 50px;
+}
+#bck_toc,#bck_toc #searchBlock,#bck_toc #indexBlock {
+    position: relative;
+    padding:0;
+}
 /*Content block with navigation tree*/
 #contentBlock>ul>li{
     padding: 1px 0 1px 0;
@@ -128,10 +139,6 @@ html,body {
     font-family: inherit;
     white-space: inherit;
 }
-#contentBlock a:hover, a.link:hover, a.navheader_parent_path:hover{
-    text-decoration: none;
-    color: #FF4D4D !important;
-}
 .hasSubMenuClosed{
     background: url('../img/book_closed16.png') no-repeat;
     padding-left: 16px;
@@ -157,9 +164,9 @@ html,body {
     text-decoration:none;
 }
 #indexBlock fieldset{
+    margin:15px 0 0 0;
+    padding:0;
     border:0;
-    padding-top:0;
-    border-bottom:1px solid #eee;
 }
 #indexBlock ul{
     color:#444;
@@ -172,17 +179,21 @@ li{
     list-style: none;
 }
 
-#searchBlock #searchForm {
-    margin: 0 10px;
+#searchBlock #searchForm, #indexBlock #indexForm {
+    position: relative;
+    margin: 0;
+    padding-top: 10px;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #0000FF;
+    box-shadow: #bbbbbb 0 0 10px;
 }
 
-#searchForm{
+#searchForm, #indexForm{
     margin:15px 10px;
     padding:0 10px 15px 10px;
-    border-bottom:0 solid #eee;
-}
-#indexForm {
-    margin:15px 10px;
+    border:0;
 }
 
 .textToSearch{
@@ -269,10 +280,11 @@ a.foundResult:hover{
     font-weight:bold;
 }
 
-#searchResults{
-    padding: 0.6em;
+#searchResults,#iList{
+    overflow: auto;
+    padding: 0 0.6em;
+    height: 100%;
 }
-
 .searchresult{
     margin:0;
     padding:0

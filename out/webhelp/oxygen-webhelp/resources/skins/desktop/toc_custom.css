@@ -14,6 +14,11 @@ html, body {
     height: 100%;
 }
 
+#expnd {
+    top: -25px;
+    position: relative;
+}
+
 /*Header*/
 #header {                      
   width: 100%;
@@ -131,7 +136,7 @@ table.nav tbody td:last-child{
   width: 25%;
   height: 100%;
   background: #fff;
-  overflow: auto;
+  overflow: hidden;
   border:1px solid transparent !important;                
 }
 
@@ -171,9 +176,8 @@ table.nav tbody td:last-child{
   background: transparent url(../../img/splitter.png) 0 50%;
 }
 .splitbarV.working,.splitbuttonV.working{
-  -moz-opacity: .50;
-  filter: alpha(opacity = 50);
   opacity: .50;
+  filter: Alpha(opacity = 50);
 }
 .splitterMask
 {
@@ -192,7 +196,7 @@ div#searchResults a{
 
 #bck_toc{
   background-color:transparent;
-  padding:0;
+  padding:20px 0 0 0;
 }
 #rightPane iframe{
   float: left;

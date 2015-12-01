@@ -46,6 +46,16 @@ function highlightSearchTerm(words) {
     }
 }
 
+/**
+ * @description Rewrite title of the page to contain topic title (EXM-30681)
+ */
+function rewriteTitle() {
+    var tocTitle = window.parent.tocwin.document.title;
+    var topicTitle = window.parent.contentwin.document.title;
+
+    window.parent.document.title = tocTitle + " - " + topicTitle;
+}
+
 $(document).ready(function () {
     $('#permalink').show();
     if ($('#permalink').length > 0) {
@@ -57,31 +67,24 @@ $(document).ready(function () {
                 $('#permalink').hide();
             }
         } else {
-            $("<div class='frames'><div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div></div>").prependTo('.navheader');							        
-            $('#permalink').hide();
+            window.location.href=getPath(location.pathname);
         }
     }
     
     // Expand toc in case there are frames.
+    // Rewrite page title
     if (top !== self && window.parent.tocwin) {
         if (typeof window.parent.tocwin.markSelectItem === 'function') {
             window.parent.tocwin.markSelectItem(window.location.href);
         }
+
+        setTimeout(rewriteTitle, 10);
     }
 
     // Click on navigation links without text 	     
     $('.navparent,.navprev,.navnext').unbind('click').bind('click', function(){
         $(this).find('a')[0].click();
 	});
-	
-	// Hide text of navigation links if window width less than 700px
-	var navLinks = $(".navparent a,.navprev a,.navnext a");
-	var wWidth = $(window).width();
-	if (wWidth >= 700) {
-        navLinks.show();
-    } else {
-        navLinks.hide();
-    }
 
 	/**
      * @description Scroll to anchor. Get anchor from iframe source and scroll to this.

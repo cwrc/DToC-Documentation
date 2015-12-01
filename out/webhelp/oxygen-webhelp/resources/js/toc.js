@@ -21,6 +21,10 @@ var showAll = true;
 var currentReq = null;
 var noFoldableNodes = 0;
 var tabsInitialized = false;
+var tocWidth;
+var navLinksWidth;
+var breadCrumbWidth;
+var navLinksWidthMin;
 
 // If page is local and is viewed in Chrome
 var notLocalChrome = verifyBrowser();
@@ -44,6 +48,25 @@ function warn(msg, obj) {
     log.warn(msg, obj);
 }
 
+function openTopic(anchor) {
+    if ($(anchor).attr('target') === undefined) {
+            /* Remove the old selection and add selection to the clicked item */
+            $('#contentBlock li span').removeClass('menuItemSelected');
+            $(anchor).parent('li span').addClass('menuItemSelected');
+
+            /* Calculate index of selected item and write value to cookie */
+            var findIndexOf = $(anchor).closest('li');
+			var index = $('#contentBlock li').index(findIndexOf);
+            $.cookie('wh_pn', index);
+
+            /* Redirect to requested page */
+            redirect($(anchor).attr('href'));
+    } else {
+        window.open($(anchor).attr('href'), $(anchor).attr('target'));
+    }
+}
+
+
 $(document).ready(function () {
     $('#preload').hide();
 
@@ -51,21 +74,21 @@ $(document).ready(function () {
      * {Refactored}
      * @description Selects the clicked item
      */
-    $('#contentBlock li a').click(function(){
-        if ($(this).attr('href').indexOf('#!_')==0){
-            // do nothing
+    $('#contentBlock li a').click(function() {
+        if ($(this).attr('href').indexOf('#!_') == 0) {
+            // expand topichead
             toggleItem($(this));
-        }else{
-            /* Remove the old selection and add selection to the clicked item */
-            $('#contentBlock li span').removeClass('menuItemSelected');
-            $(this).parent('li span').addClass('menuItemSelected');
-
-            /* Calculate index of selected item and write value to cookie */
-            index = $(this).parents('li').index('li');
-            $.cookie('wh_pn', index);
-
-            /* Redirect to requested page */
-            redirect($(this).attr('href'));
+            // find first descendant that is a topicref with href attribute
+            // and open that topicref
+            $(this).parents('li').first().find('li a').each(function() {
+                if ($(this).attr('href').indexOf('#!_') != 0) {
+                     openTopic($(this));
+                     return false;
+                }
+                return true;
+            });
+        } else {
+             openTopic($(this));
         }
         return false;
     });
@@ -78,7 +101,13 @@ $(document).ready(function () {
     // Normalize TOC HREFs and add '#' for no-frames webhelp
     $('#contentBlock li a').each(function () {
         var old = $(this).attr('href');
-        var newHref = '#' + normalizeLink(old);
+        var newHref = old;
+		// Add '#' only if @target attribute is not specified
+        if ($(this).attr('target')!==undefined) {
+            newHref = normalizeLink(old);
+        } else {
+            newHref = '#' + normalizeLink(old);
+        }
         /* If with frames */
         if (top != self) {
             newHref = normalizeLink(old);
@@ -114,6 +143,32 @@ $(document).ready(function () {
     // Set title of expand/collapse all buttons
     $('#expandAllLink').attr('title', getLocalization("ExpandAll"));
     $('#collapseAllLink').attr('title', getLocalization("CollapseAll"));
+
+    $("#searchForm").css("background-color", $("#leftPane").css("background-color"));
+    $("#indexForm").css("background-color", $("#leftPane").css("background-color"));
+
+    /**
+     * Keep Collapse / Expand buttons in the right sideof the left pane
+     */
+    $("#bck_toc").bind("scroll", function() {
+        var scrollX = $("#bck_toc").scrollLeft();
+        $("#expnd").css("left", scrollX);
+    });
+});
+
+$(window).resize(function(){
+    if ($("#searchBlock").is(":visible")) {
+        var hAvailable = parseInt($("body").height())-parseInt($("#header").height())-parseInt($("#searchForm").height())-parseInt($("#searchForm").css("padding-top"))-parseInt($("#searchForm").css("padding-bottom"));
+        $("#searchResults").css("height", hAvailable);
+    }
+    if ($("#indexBlock").is(":visible")) {
+        var hAvailable = parseInt($("body").height())-parseInt($("#header").height())-parseInt($("#indexForm").height())-parseInt($("#indexForm").css("padding-top"))-parseInt($("#indexForm").css("padding-bottom"));
+        $("#iList").css("height", hAvailable);
+    }
+    if ($("#contentBlock").is(":visible")) {
+        var hAvailable = parseInt($("body").height())-parseInt($("#header").height())-parseInt($("#bck_toc").css("padding-top"));
+        $("#bck_toc").css("height", hAvailable);
+    }
 });
 
 
@@ -200,14 +255,27 @@ function showMenu(displayTab) {
     }
     if (displayTab == 'content') {
         searchedWords = "";
+        var hAvailable = parseInt($("body").height())-parseInt($("#header").height())-parseInt($("#bck_toc").css("padding-top"));
+        $("#bck_toc").css("height", hAvailable).css("overflow", "auto");
+        $("#contentBlock").append($("#leftPane .footer"));
     }
     if (displayTab == 'search') {
         $('.textToSearch').focus();
         searchedWords = $('#textToSearch').text();
+        $("#bck_toc").css("overflow", "hidden")
+        $("#bck_toc,#bck_toc #indexBlock").css("height", "100%");
+        var hAvailable = parseInt($("body").height())-parseInt($("#header").height())-parseInt($("#searchForm").height())-parseInt($("#searchForm").css("padding-top"))-parseInt($("#searchForm").css("padding-bottom"));
+        $("#searchResults").css("height", hAvailable);
+        $("#searchResults").append($("#leftPane .footer"));
     }
     if (displayTab == 'index') {
         $('#id_search').focus();
         searchedWords = "";
+        $("#bck_toc").css("overflow", "hidden")
+        $("#bck_toc,#bck_toc #searchBlock").css("height", "100%");
+        var hAvailable = parseInt($("body").height())-parseInt($("#header").height())-parseInt($("#indexForm").height())-parseInt($("#indexForm").css("padding-top"))-parseInt($("#indexForm").css("padding-bottom"));
+        $("#iList").css("height", hAvailable);
+        $("#iList").append($("#leftPane .footer"));
     }
     // Without Frames: Show left side(toc, search, index) if hidden
     if ($("#frm").length > 0) {
@@ -249,21 +317,21 @@ var hideTooltip = function () {
  * @description In the left pane(Content, Search, Index), if not all elements are visible will add the scroll bars
  */
 function showScrolls() {
-    var w = $('#leftPane').width();
-    var bckTH = $('#bck_toc').height();
-    var leftPH = $('#leftPane').height();
-    debug('showScrolls() w=' + w + ' bckTH=' + bckTH + ' leftPH=' + leftPH);
-    if (w > 0) {
-        if (bckTH > leftPH) {
-            $('#leftPane').css('overflow-y', 'scroll');
-        } else {
-            $('#leftPane').css('overflow-y', 'auto');
-        }
-    } else if (w == 0) {
-        $('#leftPane').css('overflow-y', 'hidden');
-    } else {
-        $('#leftPane').css('overflow-y', 'auto');
-    }
+//    var w = $('#leftPane').width();
+//    var bckTH = $('#bck_toc').height();
+//    var leftPH = $('#leftPane').height();
+//    debug('showScrolls() w=' + w + ' bckTH=' + bckTH + ' leftPH=' + leftPH);
+//    if (w > 0) {
+//        if (bckTH > leftPH) {
+//            $('#leftPane').css('overflow-y', 'scroll');
+//        } else {
+//            $('#leftPane').css('overflow-y', 'auto');
+//        }
+//    } else if (w == 0) {
+//        $('#leftPane').css('overflow-y', 'hidden');
+//    } else {
+//        $('#leftPane').css('overflow-y', 'auto');
+//    }
 }
 
 /**
@@ -286,49 +354,41 @@ function verifyBrowser() {
  * @description Reposition the tooltips when browser is resized
  */
 function resizeContent() {
+    var need = tocWidth + navLinksWidth + breadCrumbWidth;
+    var needMin = tocWidth + navLinksWidthMin + breadCrumbWidth;
+    debug('NEED: '+need+' | NEED-MIN: '+needMin);
     var withFrames = window.parent.frames.length>1?true:false;
+
     var heightScreen = $(window).height();
     var hh = $('#header').height();
     var splitterH = heightScreen - hh -3;
     info('resizeContent() hh=' + hh + ' hs=' + heightScreen);
     $('#splitterContainer').height(splitterH);
-    $('div.tooltip').remove();
-
-    var width_pt = $('#productToolbar').outerWidth(true);
-    var width_nl = $('#navigationLinks').outerWidth(true);
-    var width_bl = width_pt - width_nl - 20;
-    var width_bla = $('#breadcrumbLinks a').outerWidth(true);
-
-    $('#productToolbar .navheader_parent_path').each(function () {
-        if (width_bla > width_bl) {
-            $(this).text($(this).text().replace(/\./gi,'').substr(0, 37) + "...");
-        } else {
-            $(this).text($(this).text().replace(/\./gi,''));
-        }
-    });
 
     var navLinks = withFrames?$(top.frames[ "contentwin"].document).find(".navparent a,.navprev a,.navnext a"):$(".navparent a,.navprev a,.navnext a");
-    var wWidth = withFrames?$(window.parent).width():$(window).width();
     var navHeader = withFrames?$(top.frames[ "contentwin"].document).find(".navheader"):$(".navheader");
 
-    if (wWidth >= 800) {
-        info('Deactivate tooltip');
-        navHeader.css("min-width", "326px");
-        navLinks.show();
-        navLinks.unbind({
-            mousemove: changeTooltipPosition,
-            mouseenter: showTooltip,
-            mouseleave: hideTooltip
-        });
-    } else {
-        info('Activate tooltip');
+    if(parseInt($('.tool tr:first').css('width')) < parseInt(need*1.05)){
+        debug('Need to hide navigation links');
         navHeader.css("min-width", "110px");
         navLinks.hide();
-        navLinks.bind({
-            mousemove: changeTooltipPosition,
-            mouseenter: showTooltip,
-            mouseleave: hideTooltip
-        });
+        if(parseInt($('.tool tr:first').css('width')) < parseInt(needMin*1.05)) {
+            debug('Need to hide part of breadcrumbs');
+            $('#productToolbar .navheader_parent_path').each(function () {
+                if ($(this).attr('title').length>37) {
+                    $(this).text($(this).text().replace(/\./gi, '').substr(0, 37) + "...");
+                }
+            });
+        } else {
+            debug('Need to show all breadcrumbs')
+            $('#productToolbar .navheader_parent_path').each(function () {
+                $(this).text($(this).attr('title'));
+            });
+        }
+    } else {
+        debug('Need to show navigation links');
+        navHeader.css("min-width", "326px");
+        navLinks.show();
     }
     //showScrolls();
 }
@@ -548,7 +608,6 @@ function normalizeLink(originalHref) {
     return toReturn;
 }
 
-
 /**
  * @description Opens a page file(topic) from Search tab and highlights a word from it.
  * @param page - the page that will be opened
@@ -570,7 +629,6 @@ function openAndHighlight(page, words) {
     }
     return false;
 }
-
 
 /*
  * {Refactored}

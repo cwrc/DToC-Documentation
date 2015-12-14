@@ -1,5 +1,6 @@
 
 // Auto generated index for searching.
+w["expands"]="15*0";
 w["expects"]="1*0";
 w["expertise"]="29*51";
 w["exploration"]="19*51";
@@ -28,7 +29,6 @@ w["finished"]="5*0,25*0";
 w["first"]="20*1,24*0,27*0";
 w["focus"]="15*0";
 w["focuses"]="2*0";
-w["folders"]="6*0";
 w["follow"]="6*26,16*0,20*0";
 w["following"]="20*0";
 w["follows"]="25*51";
@@ -55,7 +55,6 @@ w["general"]="15*34";
 w["generate"]="2*2";
 w["get"]="20*0";
 w["go"]="1*0,2*0";
-w["google"]="6*0";
 w["gray"]="15*0";
 w["green"]="11*0,15*0";
 w["grey"]="15*0,17*51";
@@ -83,12 +82,11 @@ w["homepage"]="20*0,24*0,25*0";
 w["hover"]="15*1,22*0,23*0";
 w["how"]="1*0,15*4,22*0,23*103,25*77";
 w["however"]="2*0,6*0,12*51,26*0";
-w["http"]="6*0,15*0,25*6";
+w["http"]="6*1,15*0,25*6";
 w["http://annotateit.org"]="15*0";
+w["http://cwrc.ca/templates/dtoc_document_template.xml"]="6*0";
 w["http://www.oxygenxml.com"]="6*0";
 w["http://www.w3schools.com/xsl/xpath_intro.asp"]="25*0";
-w["https"]="6*0";
-w["https://drive.google.com/drive/folders/0bw7kwomkxzt7flpmae1yow5aukgwsvy4au1ktklpsw1fblnpy3zuv3g3btfjy0ryv0foegc"]="6*0";
 w["human"]="2*51";
 w["icon"]="10*26,11*4,15*1,20*0,22*26,25*0";
 w["icons"]="11*0,15*0";
@@ -261,4 +259,5 @@ w["place"]="6*0";
 w["plain"]="15*1,24*0";
 w["please"]="3*0,20*0,29*51";
 w["plus"]="11*0,15*1";
+w["pop"]="22*0";
 

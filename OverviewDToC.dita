@@ -51,8 +51,7 @@
             <li>The “Tags” column shows all the XML tags searchable in your document. By clicking on
               the tags in the list you can see where they are situated in the sections. </li>
             <li>The “Stats” tab displays the word frequencies in your document. You can sort the
-              stats list by heading, list order, and category. Additionally, if you want to view
-              just a few of the terms you can create a favorite list. </li>
+              stats list by heading, list order, and category. </li>
             <li>The “Annotations” displays any annotations made in the text area. To use this
               function you must be logged in to the “AnnotateIt” tool (a popup prompt comes up when
               you open this tab). </li>
@@ -82,7 +81,6 @@
     <link href="SortingWordFreq.dita"/>
     <link href="ViewWordFrequ.dita"/>
     <link href="ViewStatsChpCollection.dita"/>
-    <link href="FavWords.dita"/>
     <link href="CommentingText.dita"/>
     <link href="LoginAnnotationAuthentication.dita"/>
     <link href="CuratingTags.dita"/>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/megansellmer/Desktop/DToC-Documentation/temp/webhelp-mobile?><?workdir-uri file:/Users/megansellmer/Desktop/DToC-Documentation/temp/webhelp-mobile/?><?path2project?><?path2project-uri ./?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="reference_bfm_blm_lt" ditaarch:DITAArchVersion="1.2" domains="(topic reference)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)    " class="- topic/topic       reference/reference " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="reference:1;3:38">
+  <title class="- topic/title " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="title:1;4:10">Overview of Dynamic Table of Context</title>
+  <shortdesc class="- topic/shortdesc " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="shortdesc:1;5:14">The Dynamic Table of Context (DToC) lets users reveal information about their text that
+    is not necessarily discovered when reading, such as word frequencies. DToC also allows users to
+    customize their document with annotations and adding tags. </shortdesc>
+  <refbody class="- topic/body        reference/refbody " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="refbody:1;8:12">
+    <section class="- topic/section " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="section:1;9:14"><title class="- topic/title " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="title:2;9:21">DToC tutorial video</title>
+        <object data="https://www.youtube.com/embed/rTrjRIJjdbM" width="420" height="315" class="- topic/object " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="object:1;10:91">
+        <param name="src" value="https://www.youtube.com/embed/rTrjRIJjdbM" class="- topic/param " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="param:1;11:78"/>
+        <param name="movie" value="https://www.youtube.com/embed/rTrjRIJjdbM" class="- topic/param " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="param:2;12:80"/>
+        <param name="allowFullScreen" value="true" class="- topic/param " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="param:3;13:53"/>
+        <param name="allowscriptaccess" value="always" class="- topic/param " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="param:4;14:57"/>
+        </object>    
+    </section>
+    <refbodydiv class="- topic/bodydiv     reference/refbodydiv " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="refbodydiv:1;17:17">
+      <section class="- topic/section " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="section:2;18:16"><title class="- topic/title " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="title:3;18:23">DToC overview</title>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:1;19:12">The homepage of DToC lets users enter URLs, text, or XML documents. DToC is optimized for
+          XML documents. Users upload pre existing XML documents by selecting the gear icon in the
+          top right corner and then following the steps described in the “Upload your XML document
+          to DToC” (linked below). </p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:2;23:12">Additionally, users can paste/type in a URL or non-XML text into the text box provided on
+          the first page of DToC. </p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:3;25:12">Once you have enter the text, the “Reveal” button moves you into the main page of DToC.
+            <image placement="break" href="http://beta.cwrc.ca/islandora/object/cwrc%3Ad4038b5f-be18-4582-b217-90805000684f/datastream/OBJ/view" id="image_vft_nmm_lt" align="center" scale="85" class="- topic/image " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="image:1;28:62"/></p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:4;29:12">The Dynamic Tables of Contexts is divided into four columns. </p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:5;30:12">The text area contains the text of the document you’ve uploaded or entered into DToC. If
+          your document has multiple sections then only the first section is visible in the text
+          area when DToC loads. Below the text, at the bottom of the column, is a “Next Chapter”
+          button (and/or a “Previous Chapter depending on what section you are viewing) that allows
+          users to navigate between different sections of a document or different components of a
+          collection.</p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:6;36:12">The document model contains multiple lines that represent paragraphs of your document and
+          are divided into sections or chapters by white spaces. These lines can become highlighted
+          if they contain an index term, tag, or stat from the left column. Additionally, you can
+          click on one of the lines to move the text area to that section of the text. </p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:7;40:12">The table of contents displays the multiple sections or chapters of your document in a
+          list. You can move between sections or chapters by clicking on the different titles
+          located in the Table of Contents. This will reload the text in the right column to the
+          section or chapter you’ve selected.</p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:8;44:12">The left column provides you with four options to explore your text.</p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:9;45:12">
+          <ul class="- topic/ul " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="ul:1;46:15">
+            <li class="- topic/li " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="li:1;47:17">The “Index” column arranges the terms alphabetically and displays the frequency of
+              different terms in your document. Your index has to follow a certain XML syntax, one
+              may want to upload a document that already has an index or to add an index to your
+              document, please read “Adding an index to your XML document” linked below.</li>
+            <li class="- topic/li " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="li:2;51:17">The “Tags” column shows all the XML tags searchable in your document. By clicking on
+              the tags in the list you can see where they are situated in the sections. </li>
+            <li class="- topic/li " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="li:3;53:17">The “Stats” tab displays the word frequencies in your document. You can sort the
+              stats list by heading, list order, and category. Additionally, if you want to view
+              just a few of the terms you can create a favorite list. </li>
+            <li class="- topic/li " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="li:4;56:17">The “Annotations” displays any annotations made in the text area. To use this
+              function you must be logged in to the “AnnotateIt” tool (a popup prompt comes up when
+              you open this tab). </li>
+          </ul>
+        </p>
+        <p class="- topic/p " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="p:10;61:12">The Table of Contents, “Index,” and “Tag” tabs are only available if you upload an XML
+          document with a structure compatible with DToC. See “Upload your XML document to DToC”
+          (linked below) for more information and one of the XML document templates to get
+          started.</p>
+      </section>
+    </refbodydiv>
+  </refbody>
+  <related-links class="- topic/related-links " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="related-links:1;68:18">
+    <link href="TableOfContents.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:1;69:40"/>
+    <link href="LeftColumnDToC.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:2;70:39"/>
+    <link href="XMLTemplatesRef.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:3;71:40"/>
+    <link href="SettingsRef.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:4;72:36"/>
+    <link href="DigitalPubRef.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:5;73:38"/>
+    <link href="UploadDocDToC.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:6;74:38"/>
+    <link href="UploadTextURL.dita#task_stp_1wt_ht" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:7;75:54"/>
+    <link href="NavigateToC.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:8;76:36"/>
+    <link href="NavDocModel.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:9;77:36"/>
+    <link href="NavTextArea.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:10;78:36"/>
+    <link href="FilteringIndexTagsStats.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:11;79:48"/>
+    <link href="SearchFullText.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:12;80:39"/>
+    <link href="FilteringChapter.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:13;81:41"/>
+    <link href="SortingWordFreq.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:14;82:40"/>
+    <link href="ViewWordFrequ.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:15;83:38"/>
+    <link href="ViewStatsChpCollection.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:16;84:47"/>
+    <link href="FavWords.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:17;85:33"/>
+    <link href="CommentingText.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:18;86:39"/>
+    <link href="LoginAnnotationAuthentication.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:19;87:54"/>
+    <link href="CuratingTags.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/OverviewDToC.dita" xtrc="link:20;88:37"/>
+  </related-links>
+</reference>

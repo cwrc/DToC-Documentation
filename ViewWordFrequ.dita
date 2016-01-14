@@ -10,8 +10,8 @@
                         id="image_fty_5t5_ht" align="center"/></cmd>
             </step>
             <step>
-                <cmd>Scroll through the list and check any words you would like to see the location
-                    of in the chapter or document. <image placement="break"
+                <cmd>To select multiple word frequncies use shift-control (PC) or shift-command
+                    (Mac). <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A69a380f5-e243-4a33-abad-d9e5a9422c5d/datastream/OBJ/view"
                         id="image_j2k_b55_ht" align="center" scale="85"/></cmd>
             </step>
@@ -30,6 +30,5 @@
         <link href="FilteringChapter.dita"/>
         <link href="SortingWordFreq.dita"/>
         <link href="ViewStatsChpCollection.dita"/>
-        <link href="FavWords.dita"/>
     </related-links>
 </task>

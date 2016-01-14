@@ -64,7 +64,8 @@
         This will organize the tags under two headings, “Tag/Path” and the “Label.”<image
           placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A25bba05a-f8c7-44cb-b3b4-7ff9700a5eaa/datastream/OBJ/view"
-          id="image_qrf_x2x_mt" align="center"/></p><p>At the bottom of the column there are three
+          id="image_qrf_x2x_mt" align="center"/></p>
+        <!--<p>At the bottom of the column there are three
         options to “Curate” the tags.<ul id="ul_zyf_tnw_mt">
           <li>“Add” allows you to add new tags to the list.</li>
           <li>“Remove Selected” allows you to delete any tags in the list.</li>
@@ -87,7 +88,7 @@
           id="image_b53_jmk_nt" align="center"/></p><p>This will add new tags to the tag list and
         will be viewable in the “Tag” column.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3Afa6b73d8-ae40-4751-aef8-1229d54a0ab9/datastream/OBJ/view"
-          id="image_tpj_nmk_nt" align="center"/></p></section>
+          id="image_tpj_nmk_nt" align="center"/></p></section>--></section>
     <section>
       <title>Stats Tab</title>
       <p>The “Stats” tab displays the word frequency of your document. You can organize how you view
@@ -127,14 +128,14 @@
           id="image_wtn_knk_nt" align="center"/></p>
       <p>You can filter terms by chapter or the entire document. At the top left of the column
         choose either “Chapter Stats” (the default selection) or “Collection Stats.”</p>
-      <p>If you don’t want to scroll through the list of terms, there is a search option at the
+      <!--<p>If you don’t want to scroll through the list of terms, there is a search option at the
         bottom of the “Stats” column. The search feature is auto complete enabled. You need to
         select one of these options to search the “Stats” list.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A86d7381b-bf96-4369-bad0-6e98b3258f91/datastream/OBJ/view"
           id="image_ymf_znk_nt" align="center"/></p>
       <p>The Stats tab also allows you to personalize a word frequency list under “favorites.”
         Select the term that you would like to “favorite” and then click on the double arrow button
-        (located at the bottom of the column). This opens up a menu with two heart icons -- one with
+        (located at the bottom of the column). This opens up a menu with two heart icons - one with
         a green plus circle and just a plain heart. Choose the heart with the plus sign.<image
           placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A6e2e78f6-ed8c-4d24-b89a-b2a3ef3b01e0/datastream/OBJ/view"
@@ -144,7 +145,7 @@
         minus icon. This third heart icon appears at the bottom of the column when you are in your
         “favorites” list.<image placement="break"
           href="http://beta.cwrc.ca/islandora/object/cwrc%3A484e84c9-3c5b-41e5-a69e-f3c24ecc5708/datastream/OBJ/view"
-          id="image_jl1_g4k_nt" align="center"/></p>
+          id="image_jl1_g4k_nt" align="center"/></p>-->
     </section>
     <section>
       <title>Annotation Tab</title>
@@ -203,7 +204,6 @@
     <link href="SortingWordFreq.dita"/>
     <link href="ViewWordFrequ.dita"/>
     <link href="ViewStatsChpCollection.dita"/>
-    <link href="FavWords.dita"/>
     <link href="ExportingDoc.dita"/>
     <link href="CommentingText.dita"/>
     <link href="LoginAnnotationAuthentication.dita"/>

@@ -5,10 +5,13 @@
     <taskbody>
         <steps>
             <step>
-                <cmd>Click on the Annotation tab or “Export” button within the annotation tab to
-                    produce an “Annotator Authentication” popup.<image placement="break"
+                <cmd>When you open DToC, you are greeted with a popup asking you to log in to the
+                    Annotator. Click on the "Annotator button to sign in. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A3daaf89c-16dc-4188-9ace-2e23c49782b2/datastream/OBJ/view"
                         id="image_mhq_w3g_c5" align="center"/></cmd>
+                <info>If you chhose not to sign in when you open DToC, you can also click on the
+                    Annotation tab or “Export” button within the annotation tab to produce the
+                    “Annotator Authentication” popup.</info>
             </step>
             <step>
                 <cmd>Click on the “Annotator Login” button.</cmd>

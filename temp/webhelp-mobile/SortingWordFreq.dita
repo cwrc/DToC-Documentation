@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/megansellmer/Desktop/DToC-Documentation/temp/webhelp-mobile?><?workdir-uri file:/Users/megansellmer/Desktop/DToC-Documentation/temp/webhelp-mobile/?><?path2project?><?path2project-uri ./?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="task_mmf_cv5_ht" ditaarch:DITAArchVersion="1.2" domains="(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)    " class="- topic/topic task/task " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="task:1;3:28">
+    <title class="- topic/title " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="title:1;4:12">Sorting word frequencies</title>
+    <shortdesc class="- topic/shortdesc " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="shortdesc:1;5:16">You can customize how you view word frequencies in DToC by different organizational
+        headings and by how the words are displayed under those headings. </shortdesc>
+    <taskbody class="- topic/body task/taskbody " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="taskbody:1;7:15">
+        <steps class="- topic/ol task/steps " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="steps:1;8:16">
+            <step class="- topic/li task/step " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="step:1;9:19">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="cmd:1;10:22">Select the heading you would like to view the list of words organized by.  </cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="step:2;12:19">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="cmd:2;13:22">Select how you would like the word frequencies to be organized by choosing one
+                    of the options available from the drop down menu. <image placement="break" href="http://beta.cwrc.ca/islandora/object/cwrc%3Abef2fa15-a5dc-4992-a6b9-2270c724aeb7/datastream/OBJ/view" id="image_xvz_wbv_c5" align="center" class="- topic/image " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="image:1;16:63"/></cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="step:3;18:19">
+                <cmd class="- topic/ph task/cmd " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="cmd:3;19:22">You can add more options by clicking on the black arrow menu option that
+                    appears beside the organization headings when you hover your mouse over it. This
+                    brings up a drop down menu, select the “Column” option that displays another
+                    drop down menu filled with additional heading options.<image placement="break" href="http://beta.cwrc.ca/islandora/object/cwrc%3A26b88836-41ba-4fc2-9113-09ea53fff8e8/datastream/OBJ/view" id="image_wrg_t1v_c5" align="center" class="- topic/image " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="image:2;24:63"/></cmd>
+            </step>
+        </steps>
+    </taskbody>
+    <related-links class="- topic/related-links " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="related-links:1;28:20">
+        <link href="OverviewDToC.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:1;29:41"/>
+        <link href="TableOfContents.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:2;30:44"/>
+        <link href="LeftColumnDToC.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:3;31:43"/>
+        <link href="FilteringIndexTagsStats.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:4;32:52"/>
+        <link href="SearchFullText.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:5;33:43"/>
+        <link href="FilteringChapter.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:6;34:45"/>
+        <link href="ViewWordFrequ.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:7;35:42"/>
+        <link href="ViewStatsChpCollection.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:8;36:51"/>
+        <link href="FavWords.dita" class="- topic/link " xtrf="/Users/megansellmer/Desktop/DToC-Documentation/SortingWordFreq.dita" xtrc="link:9;37:37"/>
+    </related-links>
+</task>

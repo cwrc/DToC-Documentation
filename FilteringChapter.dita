@@ -23,13 +23,13 @@
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3A9f298835-8fb5-4c76-8ab4-0aa4980c6307/datastream/OBJ/view"
                         id="image_mj5_hr5_ht" align="center"/></cmd>
             </step>
-            <step>
+           <!--   <step>
                 <cmd>To reset the filter, click again on the “Filter by Chapter” drop down menu and
                     unselect the chapter you have selected. Or click on the "Clear" button above the
                     document model. <image placement="break"
                         href="http://beta.cwrc.ca/islandora/object/cwrc%3Ad1f6457a-6762-425d-ba6b-2ad92929a9aa/datastream/OBJ/view"
                         id="image_ucd_vr5_ht" align="center"/></cmd>
-            </step>
+            </step>-->
         </steps>
     </taskbody>
     <related-links>
@@ -39,8 +39,7 @@
         <link href="SearchFullText.dita"/>
         <link href="SortingWordFreq.dita"/>
         <link href="ViewWordFrequ.dita"/>
-        <link href="ViewStatsChpCollection.dita"/>
-        <link href="FavWords.dita"/>      
+        <link href="ViewStatsChpCollection.dita"/>     
         <link href="LoginAnnotationAuthentication.dita"/>
         <link href="CommentingText.dita"/>
         <link href="CuratingTags.dita"/>
